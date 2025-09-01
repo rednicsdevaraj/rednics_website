@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Conthrax';
+  src: url('./fonts/conthrax-sb.woff2') format('woff2'),
+       url('./fonts/conthrax-sb.woff') format('woff'),
+       url('./fonts/conthrax-sb.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url('./fonts/Menlo-Regular.woff') format('woff');
+  font-weight:normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Oxanium', 'Conthrax', sans-serif;
+  font-size: 1.125rem; /* Increased font size for all body text */
+}
+
+/* Glassmorphism Effect */
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glowing Border on Hover */
+.glassmorphism-card:hover {
+  box-shadow: 0 0 20px rgba(229, 62, 62, 0.6);
+  transform: translateY(-5px);
+  border-color: #E53E3E;
+}
+
+/* Carousel */
+.carousel-slide {
+    display: none;
+}
+.carousel-slide[data-active="true"] {
+    display: block;
+    opacity: 1;
+}
+
+/* Glowing Effect for hover on services */
+.hover\:shadow-red-glow:hover {
+    box-shadow: 0 0 15px rgba(229, 62, 62, 0.4);
+}

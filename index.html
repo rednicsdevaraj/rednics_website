@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rednics - Next Generation Technology Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/rednics-Initial.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --main-red: #E53E3E; /* A bold red for accents */
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-gray-900 shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-red-600 hover:text-red-500">
+                <img src="./images/rednics_logo.png" alt="Rednics Company Logo" class="h-12 md:h-16">
+            </a>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <div id="navigation-links" class="hidden md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-gray-900 shadow-lg md:shadow-none py-4 md:py-0 transition-transform duration-300 transform -translate-y-full md:translate-y-0">
+                <a href="#home" class="text-white hover:text-red-600 transition duration-300">Home</a>
+                <a href="#technologies" class="text-white hover:text-red-600 transition duration-300">Technologies</a>
+                <a href="#services" class="text-white hover:text-red-600 transition duration-300">Services</a>
+                <a href="#about-us" class="text-white hover:text-red-600 transition duration-300">About Us</a>
+                <a href="#contact" class="text-white hover:text-red-600 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="relative h-screen overflow-hidden">
+        <div class="carousel-container relative h-full w-full">
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-active="true">
+                <img src="./images/Drones1.png" alt="Drones Technology" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">Drones</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Revolutionizing aerial perspectives for data collection and operations.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                <img src="./images/AI.png" alt="Artificial Intelligence" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">Artificial Intelligence</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Smart algorithms driving insights, automation, and intelligent decision-making.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                <img src="./images/AR1.png" alt="Augmented Reality" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">Augmented Reality</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Overlaying digital information onto the real world for enhanced interaction.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                <img src="./images/VR_AR.png" alt="Virtual Reality" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">Virtual Reality</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Immersive digital environments for training, design, and exploration.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                <img src="./images/DigitalTwin.png" alt="Digital Twin" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">Digital Twin</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Virtual replicas of physical assets for monitoring, analysis, and prediction.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                <img src="./images/Drone_AR_Agri_OIT.png" alt="IoT" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/70 to-transparent text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-600">IoT</h2>
+                    <p class="mt-2 text-lg md:text-xl font-light max-w-2xl mx-auto text-white">
+                        Connecting devices to gather data and enable smart, automated systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="0"></button>
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="1"></button>
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="2"></button>
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="3"></button>
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="4"></button>
+            <button class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-300" data-slide-to="5"></button>
+        </div>
+    </section>
+
+    <section id="technologies" class="container mx-auto px-6 py-20 scroll-mt-24">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-600">Our Technologies</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Drones</h3>
+                <p class="text-white/80 text-sm">
+                    Leverage autonomous aerial vehicles to capture high-resolution data, perform inspections, and enhance operational efficiency across various industries.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Artificial Intelligence</h3>
+                <p class="text-white/80 text-sm">
+                    Utilize machine learning and neural networks to analyze complex data, automate tasks, and provide predictive insights that drive business growth.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Augmented Reality</h3>
+                <p class="text-white/80 text-sm">
+                    Integrate digital content with the real world to create interactive experiences for training, product visualization, and interactive guides.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Virtual Reality</h3>
+                <p class="text-white/80 text-sm">
+                    Design fully immersive, computer-generated environments for simulations, entertainment, and virtual collaboration, pushing the boundaries of human interaction.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Digital Twin</h3>
+                <p class="text-white/80 text-sm">
+                    Virtual replicas of physical assets for monitoring, analysis, and prediction.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">IoT</h3>
+                <p class="text-white/80 text-sm">
+                    Build interconnected networks of devices and sensors that collect and exchange data, enabling intelligent automation and streamlined processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container mx-auto px-6 py-20 scroll-mt-24 bg-gray-800">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-600">Our Services</h2>
+        <p class="text-center text-lg max-w-3xl mx-auto mb-16 text-white/80">
+            Our services are designed to help enterprises train smarter, operate more efficiently, and manage infrastructure with real-time insights. Whether deployed as standalone modules or integrated platforms, our offerings are built for high impact use across aviation, smart infrastructure, manufacturing, education, and more.
+        </p>
+        <div class="grid grid-cols-1 gap-8">
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('drones')">
+                    <h3 class="text-3xl font-bold text-red-600">Drones based Services</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="drones-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="drones-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        We provide next-generation drone-based solutions that combine aerial intelligence, automation, and data analytics. Our drones are designed to increase efficiency, reduce costs, and enhance safety across diverse industries.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🌱</span> Agriculture
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Precision spraying (fertilizers, pesticides, herbicides)</li>
+                                <li>Seed sowing & planting</li>
+                                <li>Crop health monitoring (multispectral, hyperspectral, thermal imaging)</li>
+                                <li>Irrigation monitoring & water stress detection</li>
+                                <li>Soil analysis & mapping</li>
+                                <li>Smart harvesting & plucking</li>
+                                <li>Crop yield estimation & forecasting</li>
+                                <li>Livestock monitoring & tracking</li>
+                                <li>Pest/disease early detection</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🏗</span> Construction & Infrastructure
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Land surveying & site mapping (LiDAR, photogrammetry)</li>
+                                <li>Progress monitoring & reporting (3D models, BIM integration)</li>
+                                <li>Structural inspection (bridges, towers, pipelines)</li>
+                                <li>Material transport (light payload delivery)</li>
+                                <li>Safety monitoring (worker compliance, hazard detection)</li>
+                                <li>Earthworks volume calculation (cut & fill analysis)</li>
+                                <li>Roof inspections (thermal for leakage detection)</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">⛏</span> Mining & Quarrying
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Mine site mapping (LiDAR, 3D terrain models)</li>
+                                <li>Stockpile measurement & volumetrics</li>
+                                <li>Slope stability monitoring</li>
+                                <li>Blasting area inspection & safety checks</li>
+                                <li>Underground mine ventilation monitoring (specialized drones)</li>
+                                <li>Dust, gas, and environmental monitoring</li>
+                                <li>Worker safety inspections in hazardous zones</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🚜</span> Forestry & Environmental Monitoring
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Forest mapping & canopy analysis</li>
+                                <li>Illegal logging detection</li>
+                                <li>Reforestation (seed dropping drones)</li>
+                                <li>Wildlife monitoring & anti-poaching patrols</li>
+                                <li>Fire detection (thermal cameras)</li>
+                                <li>Carbon stock & biomass estimation</li>
+                                <li>Environmental compliance checks</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🛣</span> Transport & Infrastructure
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Road/railway corridor mapping</li>
+                                <li>Traffic monitoring & congestion analysis</li>
+                                <li>Port/harbor security surveillance</li>
+                                <li>Bridge/tunnel inspections</li>
+                                <li>Accident site monitoring & quick response</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🏭</span> Energy & Utilities
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Power line & transmission tower inspection (visual + thermal)</li>
+                                <li>Wind turbine inspection (blade cracks, erosion)</li>
+                                <li>Solar panel inspection (hotspot detection, efficiency loss)</li>
+                                <li>Oil & gas pipeline inspection (leaks, corrosion)</li>
+                                <li>Offshore platform monitoring</li>
+                                <li>Substation monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🛡</span> Security, Defense & Law Enforcement
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Border surveillance & patrolling</li>
+                                <li>Disaster response & search-and-rescue (SAR)</li>
+                                <li>Riot/crowd monitoring</li>
+                                <li>Tactical surveillance & reconnaissance</li>
+                                <li>Payload delivery (medical kits, ammo, supplies)</li>
+                                <li>Convoy escort & overwatch</li>
+                                <li>Drone swarms for coordinated missions</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🏙</span> Urban Management & Smart Cities
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Traffic monitoring & urban planning</li>
+                                <li>Building inspection & maintenance</li>
+                                <li>Waste management monitoring (landfills, illegal dumping)</li>
+                                <li>Air pollution & environmental monitoring</li>
+                                <li>Law enforcement surveillance</li>
+                                <li>Drone taxis / aerial mobility (future urban transport)</li>
+                            </ul>
+                        </div>
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🎥</span> Media & Entertainment
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Aerial cinematography</li>
+                                <li>Live event coverage (sports, concerts)</li>
+                                <li>Tourism promotion & virtual tours</li>
+                                <li>Cinematic VFX integration (drone photogrammetry for CGI)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('ai')">
+                    <h3 class="text-3xl font-bold text-red-600">Artificial Intelligence</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="ai-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="ai-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        We design smart systems that learn, predict, and optimize processes to enable better decision-making in real-time.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🧠</span> Key Offerings
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Predictive Machine Learning Models</li>
+                                <li>Computer Vision for object detection, quality control, and automation</li>
+                                <li>AI-powered dashboards for operational insights</li>
+                                <li>Real-time monitoring via AI + IoT + AR fusion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('ar')">
+                    <h3 class="text-3xl font-bold text-red-600">Augmented Reality</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="ar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="ar-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        We bridge the physical and digital worlds using context-aware AR layers that transform environments into interactive workspaces.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">👁️</span> Key Offerings
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Indoor AR Navigation (airports, hospitals, campuses)</li>
+                                <li>AR-integrated Building Management Systems (BMS)</li>
+                                <li>AR Training and Field Knowledge Systems</li>
+                                <li>IoT + AR Visualization for sensor data in physical environments</li>
+                                <li>AR-assisted Maintenance with smart overlays</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('vr')">
+                    <h3 class="text-3xl font-bold text-red-600">Virtual Reality</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="vr-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="vr-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        We build fully immersive and interactive VR environments that accelerate skill development and reduce operational risks.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🎮</span> Key Offerings
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Industry-Specific VR Training Modules (e.g., safety drills, equipment ops)</li>
+                                <li>Digital Twin-based virtual walkthroughs</li>
+                                <li>Emergency response simulations</li>
+                                <li>Custom VR environments for remote learning and collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('digital-twin')">
+                    <h3 class="text-3xl font-bold text-red-600">Digital Twin</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="digital-twin-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="digital-twin-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        RICS builds dynamic digital replicas of physical assets — enabling live monitoring, simulation, and remote management.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🌐</span> Key Offerings
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>Live system visualization via 3D models</li>
+                                <li>Predictive simulations to reduce downtime and risk</li>
+                                <li>Asset & process optimization using AI</li>
+                                <li>Remote monitoring and virtual collaboration</li>
+                                <li>Smart Building Digital Twins with AR + IoT integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glassmorphism-card group p-6 rounded-3xl shadow-lg border-2 border-red-500/20 transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion('iot')">
+                    <h3 class="text-3xl font-bold text-red-600">IoT</h3>
+                    <svg class="w-6 h-6 text-red-600 transform transition-transform duration-300" id="iot-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div id="iot-accordion" class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-white/80 text-sm mb-4">
+                        RICS connects the physical world through intelligent sensor networks and real-time data pipelines that drive smarter decisions and autonomous operations.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="glassmorphism-card p-4 rounded-xl border border-white/10 hover:border-red-500 hover:shadow-red-glow">
+                            <h4 class="text-lg font-bold text-red-600 mb-2 flex items-center">
+                                <span class="text-xl mr-2">🔗</span> Key Offerings
+                            </h4>
+                            <ul class="list-disc list-inside text-white/80 text-sm space-y-1">
+                                <li>IoT-enabled monitoring for energy, occupancy, and asset usage</li>
+                                <li>Edge device integration with cloud-based analytics</li>
+                                <li>Real-time alerts for anomaly detection and maintenance</li>
+                                <li>Sensor fusion for environmental, structural, and safety data</li>
+                                <li>IoT + AI dashboards for actionable insights in operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="container mx-auto px-6 py-20 scroll-mt-24">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-600">About Us</h2>
+        <p class="text-center text-lg max-w-3xl mx-auto mb-16 text-white/80">
+            REDNICS is a next-generation technology company delivering real-world impact through immersive and intelligent systems. We combine the power of Drones, Artificial Intelligence (AI), Augmented Reality (AR), Virtual Reality (VR), Internet of Things (IoT), and Digital Twin technologies to help organizations rethink how they train staff, monitor operations, visualize environments, and make data-driven decisions.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Our Mission</h3>
+                <p class="text-white/80 text-sm">
+                    We build intelligent, immersive, and scalable systems using Drones, AI, AR, VR, IoT, and Digital Twins to help industries train smarter, operate safer, and perform better.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Our Vision</h3>
+                <p class="text-white/80 text-sm">
+                    To redefine how the world experiences and manages infrastructure by embedding intelligence and immersion into every environment we touch.
+                </p>
+            </div>
+            <div class="glassmorphism-card p-6 rounded-3xl shadow-lg border-2 border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-600 mb-2">Core Values</h3>
+                <ul class="list-disc list-inside text-white/80 text-sm space-y-2">
+                    <li>
+                        <span class="font-bold text-red-400">Intelligent Innovation:</span> We harness the power of cutting-edge technologies to create forward-thinking solutions that solve complex, real-world challenges.
+                    </li>
+                    <li>
+                        <span class="font-bold text-red-400">Human-Centric Design:</span> Every product we build enhances human capability—simplifying workflows, improving safety, and delivering intuitive experiences.
+                    </li>
+                    <li>
+                        <span class="font-bold text-red-400">Integrity in Execution:</span> We commit to transparency, reliability, and lasting impact in everything we build—from MVPs to enterprise-scale deployments.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-6 py-20 scroll-mt-24 bg-gray-800">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-600">Contact</h2>
+        <p class="text-center text-lg max-w-3xl mx-auto mb-16 text-white/80">
+            Reach out to us for any inquiries about our services or technologies. We're here to help you innovate and solve complex challenges.
+        </p>
+        <div class="grid grid-cols-1 gap-8">
+            <div class="glassmorphism-card p-8 rounded-3xl shadow-lg border-2 border-red-500/20 flex flex-col items-center text-center space-y-6">
+                <h3 class="text-2xl font-bold text-red-600">Contact Information</h3>
+                <ul class="text-white/80 text-sm space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <span>kbdevaraj@rednics.com</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.103 6.103l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                        <span>+91 96633 79123</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>No 38, Kumaran Avenue, Thudiyalur, Coimbatore, Tamil Nadu - 641010, India</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-center py-4">
+        <p class="text-sm text-gray-500">&copy; 2025 REDNICS. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
