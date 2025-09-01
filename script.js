@@ -79,8 +79,17 @@ document.getElementById('mobile-menu-button').addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const navigationLinks = document.getElementById('navigation-links');
+    const navLinks = document.querySelectorAll('#navigation-links a');
 
+    // Toggles the mobile menu visibility when the hamburger button is clicked.
     mobileMenuButton.addEventListener('click', () => {
         navigationLinks.classList.toggle('-translate-y-full');
+    });
+
+    // Hides the mobile menu when a navigation link is clicked.
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navigationLinks.classList.add('-translate-y-full');
+        });
     });
 });
