@@ -75,3 +75,12 @@ document.getElementById('mobile-menu-button').addEventListener('click', () => {
     navLinks.classList.toggle('hidden');
     navLinks.classList.toggle('flex');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const navigationLinks = document.getElementById('navigation-links');
+
+    mobileMenuButton.addEventListener('click', () => {
+        navigationLinks.classList.toggle('-translate-y-full');
+    });
+});
